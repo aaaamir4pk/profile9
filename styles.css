@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+.container{
+	background:#00f;
+	position:relative;
+}
+
+.man1{
+	position:absolute;
+	top:20px;
+	right:-50px;
+	animation:man-fly1 15s infinite linear;
+}
+
+.man1 img{
+	width:100px;
+	animation:man-fly2 15s infinite linear;
+}
+
+@keyframes man-fly1{
+	0%{top:20px;}
+	100%{top:170px;}
+	100%{transform:translatex(-1000px);}
+}
+
+@keyframes man-fly2{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(10deg);}
+	20%{transform:rotate(-5deg);}
+	30%{transform:rotate(10deg);}
+	40%{transform:rotate(-5deg);}
+	50%{transform:rotate(10deg);}
+	60%{transform:rotate(-5deg);}
+	70%{transform:rotate(10deg);}
+	80%{transform:rotate(-5deg);}
+	90%{transform:rotate(10deg);}
+	100%{transform:rotate(-5deg);}
+	0%{width:50px;}
+	100%{width:150px;}
+}
+
+.garden img{
+	width:100%;
+	height:80vh;
+	background-size:100% 100%;
+}
